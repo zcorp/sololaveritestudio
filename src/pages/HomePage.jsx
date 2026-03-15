@@ -13,9 +13,9 @@ const PREVIEW_EPISODES = [
 ];
 
 const PREVIEW_PRODUCTS = [
-  { name: "T-Shirt Logo",   price: "24,99 €", image: "https://raw.githubusercontent.com/zcorp/sololaveritestudio/c99a95c0181e3893e9d94360021dca93e4f746cd/shop/image%20copie.jpg" },
-  { name: "T-Shirt Studio", price: "27,99 €", image: "https://raw.githubusercontent.com/zcorp/sololaveritestudio/c99a95c0181e3893e9d94360021dca93e4f746cd/shop/image.jpg" },
-  { name: "Mug Officiel",   price: "12,99 €", image: "https://raw.githubusercontent.com/zcorp/sololaveritestudio/4e6bd3be649a65c6b37c5af2dcf492c459c6fa87/shop/pink-shirt.jpg" },
+  { name: "T-Shirt Logo",   price: "24,99 €", image: "https://raw.githubusercontent.com/zcorp/sololaveritestudio2/c99a95c0181e3893e9d94360021dca93e4f746cd/shop/image%20copie.jpg" },
+  { name: "T-Shirt Studio", price: "27,99 €", image: "https://raw.githubusercontent.com/zcorp/sololaveritestudio2/c99a95c0181e3893e9d94360021dca93e4f746cd/shop/image.jpg" },
+  { name: "Mug Officiel",   price: "12,99 €", image: "https://raw.githubusercontent.com/zcorp/sololaveritestudio2/4e6bd3be649a65c6b37c5af2dcf492c459c6fa87/shop/pink-shirt.jpg" },
 ];
 
 const STUDIO_PHOTOS = [
