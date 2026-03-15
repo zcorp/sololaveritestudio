@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# docker-compose.yml
+# Two services:
+#   frontend      — React dev server with hot reload (always-on)
+#   youtube-sync  — one-shot script to regenerate episodes.json
+#
+# Usage:
+#   docker compose up              → start frontend only (youtube-sync exits fast)
+#   docker compose run youtube-sync → run sync on demand
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── React dev server ────────────────────────────────────────────────────────
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # Mount the project so code changes are reflected instantly (hot reload)
+    volumes:
+      - .:/app
+      # Keep node_modules inside the container — avoids host/container conflicts
+      - /app/node_modules
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      - CHOKIDAR_USEPOLLING=true   # needed on some Docker + Windows setups
+      - VITE_MAIN_URL=${MAIN_URL:-https://www.sololaveritestudio.com}
+      - VITE_SHOP_URL=${SHOP_URL:-https://shop.sololaveritestudio.com}
+
+    # Restart automatically if the process crashes
+    restart: unless-stopped
+
+  # ── YouTube data sync (one-shot) ─────────────────────────────────────────────
+  youtube-sync:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+    # Override the default CMD — just run the fetch script then exit
+    command: node scripts/youtube-fetch.js
+
+    environment:
+      - YOUTUBE_API_KEY=${YOUTUBE_API_KEY}
+      - YOUTUBE_CHANNEL_ID=${YOUTUBE_CHANNEL_ID}
+
+    # Don't restart — it's a one-shot task
+    restart: "no"
+
+    # Don't start automatically with `docker compose up`
+    profiles:
+      - sync

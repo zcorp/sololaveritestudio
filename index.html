@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solola Vérité Studio</title>
+
+  <!-- ── Performance: prefetch & preconnect shop domain ──────────────────── -->
+  <!-- These fire as early as possible so Shopify loads fast when user hits /shop -->
+  <link rel="dns-prefetch"    href="https://shop.sololaveritestudio.com" />
+  <link rel="preconnect"      href="https://shop.sololaveritestudio.com" crossorigin />
+
+  <!-- Preconnect YouTube (used for video thumbnails + iframes) -->
+  <link rel="dns-prefetch"    href="https://www.youtube.com" />
+  <link rel="preconnect"      href="https://i.ytimg.com"     crossorigin />
+
+  <!-- ── Favicon ─────────────────────────────────────────────────────────── -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- ── Meta SEO ────────────────────────────────────────────────────────── -->
+  <meta name="description" content="Solola Vérité Studio — Le talk-show qui dit la vérité sans filtre." />
+  <meta property="og:title"       content="Solola Vérité Studio" />
+  <meta property="og:description" content="Le talk-show qui dit la vérité sans filtre." />
+  <meta property="og:type"        content="website" />
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Vite injects the bundled script here -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
