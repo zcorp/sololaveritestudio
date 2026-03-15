@@ -8,6 +8,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - "src/**"
+      - "public/**"        # ← inclut public/data/episodes.json
+      - "index.html"
+      - "vite.config.js"
+
 
   # Permet de déclencher manuellement depuis GitHub Actions UI
   workflow_dispatch:
