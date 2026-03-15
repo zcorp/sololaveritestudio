@@ -9,7 +9,10 @@ name: YouTube Sync
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # every day at 06:00 UTC
+    - cron: "0 4 * * *"    # → 06h00 France
+    - cron: "30 9 * * *"   # → 11h30 France
+    - cron: "0 16 * * *"   # → 18h00 France
+    #- cron: "0 6 * * *"   # every day at 06:00 UTC
 
   # Allow manual trigger from GitHub Actions UI
   workflow_dispatch:
@@ -22,13 +25,13 @@ jobs:
     steps:
       # 1 — Checkout the repo
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       # 2 — Set up Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.3.0
         with:
-          node-version: "20"
+          node-version: "22"
           cache: "npm"
 
       # 3 — Install dependencies (only what the script needs)
