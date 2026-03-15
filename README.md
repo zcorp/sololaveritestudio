@@ -36,6 +36,8 @@ npm run dev
 ./start.sh          # lance le dev server → http://localhost:3000
 ./start.sh sync     # sync YouTube puis lance le frontend
 ./start.sh build    # build production → dist/
+## docker compose build frontend
+./start.sh deploy
 ./start.sh stop     # arrête et nettoie les conteneurs
 
 ---

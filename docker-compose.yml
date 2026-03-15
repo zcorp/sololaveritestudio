@@ -28,6 +28,7 @@ services:
 
     environment:
       - CHOKIDAR_USEPOLLING=true   # needed on some Docker + Windows setups
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
       - VITE_MAIN_URL=${MAIN_URL:-https://www.sololaveritestudio.com}
       - VITE_SHOP_URL=${SHOP_URL:-https://shop.sololaveritestudio.com}
 

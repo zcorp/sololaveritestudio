@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+
+# ── Charger le fichier .env ───────────────────────────────────────────────────
+if [[ -f ".env" ]]; then
+  set -a
+  source .env
+  set +a
+fi
+
 # ─────────────────────────────────────────────────────────────────────────────
 # start.sh — Lance l'environnement Docker SVS et nettoie à la sortie
 #
@@ -85,6 +93,27 @@ if [[ ! -f ".env" ]]; then
 fi
 
 success "Prérequis OK"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMMANDE : deploy
+# ─────────────────────────────────────────────────────────────────────────────
+if [[ "${1:-}" == "deploy" ]]; then
+  log "Build + déploiement GitHub Pages via Docker..."
+
+  # Vérifier que le token GitHub est disponible
+  if [[ -z "${GITHUB_TOKEN:-}" ]]; then
+    warn "GITHUB_TOKEN non défini — ajoutez-le dans .env"
+    exit 1
+  fi
+
+  docker compose run --rm \
+    -e GITHUB_TOKEN="${GITHUB_TOKEN}" \
+    frontend \
+    sh -c "git config --global user.email 'deploy@sololaveritestudio.com' && git config --global user.name 'SVS Deploy' && npm run build && npx gh-pages -d dist --repo https://x-access-token:${GITHUB_TOKEN}@github.com/zcorp/sololaveritestudio.git"
+
+  success "Déployé sur GitHub Pages !"
+  exit 0
+fi
 
 # ─────────────────────────────────────────────────────────────────────────────
 # COMMANDE : sync  (YouTube + frontend)

@@ -6,6 +6,9 @@
 
 FROM node:20-alpine
 
+# Installer git (requis pour gh-pages)
+RUN apk add --no-cache git
+
 # Set working directory inside the container
 WORKDIR /app
 
