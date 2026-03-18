@@ -6,11 +6,14 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SITE } from "./config/site.js";
 
+
+import AboutPage from "./pages/AboutPage.jsx";
 import Navbar           from "./components/Navbar.jsx";
 import Footer           from "./components/Footer.jsx";
 import HomePage         from "./pages/HomePage.jsx";
 import TeamPage         from "./pages/TeamPage.jsx";
 import ContactPage      from "./pages/ContactPage.jsx";
+
 
 // Lazy-loaded — downloaded only when user navigates to /episodes
 const EpisodesPage = lazy(() => import("./pages/EpisodesPage.jsx"));
@@ -42,6 +45,7 @@ export default function App() {
               <Route path="/shop/*" element={<ShopRedirect />} />
               <Route path="/equipe"   element={<TeamPage />} />
               <Route path="/contact"  element={<ContactPage />} />
+              <Route path="/about" element={<AboutPage />} />
             </Routes>
           </Suspense>
         </main>

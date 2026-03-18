@@ -49,9 +49,9 @@ const SOCIALS = [
 const NAV_LINKS = [
   { label: "Home",         to: "/"        },
   { label: "Épisodes",        to: "/episodes"},
-  //{ label: "À propos",        to: "/about"   },
   //{ label: "Équipe",          to: "/equipe"  },
   { label: "Contact",         to: "/contact" },
+  { label: "À propos",        to: "/about"   },
 ];
 
 const LEGAL_LINKS = [

@@ -32,6 +32,7 @@ export const MAIN_NAV = [
   { label: "SHOP",     path: "/shop",     external: true }, // triggers redirect
   //{ label: "ÉQUIPE",   path: "/equipe",   external: false },
   { label: "CONTACT",  path: "/contact",  external: false },
+  { label: "À PROPOS", path: "/about",    external: false },
 ];
 
 // ── Shopify nav (absolute links back to main site) ────────────────────────────
