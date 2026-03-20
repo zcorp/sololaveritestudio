@@ -7,7 +7,28 @@ import { COLORS }         from "../config/site.js";
 import { useWindowWidth } from "../hooks/useWindowWidth.js";
 import React, { useState, useEffect, useRef } from "react";
 
+const EPISODE_DAYS_FILTER = 0; // 0 = tout afficher, 7 = 7 derniers jours, 30 = dernier mois...
+
+function filterByDays(eps, days) {
+  if (days === 0) return eps;
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - days);
+
+  //console.log("cutoff:", cutoff);
+  //console.log("premier ep date:", eps[0]?.insertedAt);
+
+  return eps.filter(ep => {
+    const dateStr = ep.insertedAt?.["$date"] ?? ep.insertedAt ?? ep.date ?? null;
+
+    if(dateStr.includes("2025"))
+      console.log("dateStr:", dateStr, "parsed:", new Date(dateStr));
+    if (!dateStr) return true;
+    return new Date(dateStr) < cutoff;
+  });
+}
+
 export default function EpisodesPage() {
+  const playerRef = useRef(null);
   const { episodes: eps, loading } = useEpisodes();
   const [activeEp, setActiveEp]   = useState(null);
   const [search,   setSearch]     = useState("");
@@ -24,9 +45,10 @@ export default function EpisodesPage() {
 
   useEffect(() => { setVisible(9); }, [search]);
 
-  const filtered  = eps.filter(ep =>
+  const filtered = filterByDays(eps, EPISODE_DAYS_FILTER).filter(ep =>
     (ep.title ?? "").toLowerCase().includes(search.toLowerCase())
   );
+
   const displayed = filtered.slice(0, visible);
   const hasMore   = visible < filtered.length;
 
@@ -125,7 +147,7 @@ export default function EpisodesPage() {
         boxSizing:           "border-box",
       }}>
         {/* Lecteur */}
-        <div style={{ background: "#000", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(255,255,255,.1)" }}>
+        <div ref={playerRef} style={{ background: "#000", borderRadius: 14, overflow: "hidden", border: "1px solid rgba(255,255,255,.1)" }}>
           <div style={{ aspectRatio: "16/9", position: "relative" }}>
             {activeEp && (
               <iframe
@@ -203,7 +225,12 @@ export default function EpisodesPage() {
         }}>
           <div style={{ display: "grid", gridTemplateColumns: gridCols, gap: 12 }}>
             {displayed.map(ep => (
-              <div key={ep.videoId} onClick={() => setActiveEp(ep)}
+              <div key={ep.videoId} onClick={() => {
+                setActiveEp(ep) 
+                if (isMobile && playerRef.current) {
+                  playerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+              }}
                 style={{
                   background:  activeEp?.videoId === ep.videoId ? "rgba(255,255,255,.07)" : "#111827",
                   borderRadius: 10,
