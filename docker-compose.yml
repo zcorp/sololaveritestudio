@@ -58,3 +58,26 @@ services:
     # Don't start automatically with `docker compose up`
     profiles:
       - sync
+  # ── Shopify data sync (one-shot) ─────────────────────────────────────────────
+  shopify-sync:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+    # Override the default CMD — just run the fetch script then exit
+    command: node scripts/shopify-fetch.js
+
+    environment:
+      - SHOPIFY_DOMAIN=${SHOPIFY_DOMAIN}
+      - SHOPIFY_STOREFRONT_TOKEN=${SHOPIFY_STOREFRONT_TOKEN}
+
+    # Don't restart — it's a one-shot task
+    restart: "no"
+
+    # Don't start automatically with `docker compose up`
+    profiles:
+      - sync

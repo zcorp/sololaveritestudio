@@ -30,3 +30,4 @@ dist-ssr
 !.env.*.example
 docker
 scripts/youtube-fetch2.js
+scripts/shopify-fetch2.js

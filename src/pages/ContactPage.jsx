@@ -77,8 +77,42 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [focused,   setFocused]   = useState("");
 
-  const handleSubmit = () => {
-    if (form.name && form.email && form.message) setSubmitted(true);
+  /*const handleSubmit = () => {
+    if (!form.name || !form.email || !form.message) return;
+    window.location.href = `mailto:sololaveritestudio@outlook.fr`
+      + `?subject=[${encodeURIComponent(form.subject)}] - ${encodeURIComponent(form.name)}`
+      + `&body=${encodeURIComponent(form.message)}`;
+    setSubmitted(true);
+  };*/
+
+  const handleSubmit = async () => {
+    if (!form.name || !form.email || !form.message) return;
+
+    try {
+      const body = new URLSearchParams({
+        "form_type":          "contact",
+        "utf8":               "✓",
+        "contact[name]":      form.name,
+        "contact[email]":     form.email,
+        "contact[body]":      `[${form.subject}]\n\n${form.message}`,
+      });
+
+      const res = await fetch("https://shop.sololaveritestudio.com/contact", {
+        method:  "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body:    body.toString(),
+      });
+
+      // Shopify retourne toujours 200 ou une redirection
+      if (res.ok || res.status === 302) {
+        setSubmitted(true);
+      } else {
+        throw new Error(`HTTP ${res.status}`);
+      }
+    } catch(e) {
+      // Shopify bloque les requêtes cross-origin — fallback mailto
+      window.location.href = `mailto:contact@sololaveritestudio.com?subject=[${form.subject}]&body=${encodeURIComponent(form.message)}`;
+    }
   };
 
   const inputStyle = (field) => ({

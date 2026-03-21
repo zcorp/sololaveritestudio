@@ -122,6 +122,17 @@ if [[ "${1:-}" == "sync" ]]; then
   log "Synchronisation YouTube..."
   docker compose --profile sync run --rm youtube-sync
   success "episodes.json mis à jour dans public/data/"
+  exit 0
+fi
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COMMANDE : shopify
+# ─────────────────────────────────────────────────────────────────────────────
+if [[ "${1:-}" == "shopify" ]]; then
+  log "Synchronisation Shopify..."
+  docker compose --profile sync run --rm shopify-sync
+  success "products.json mis à jour dans public/data/"
+  exit 0
 fi
 
 # ─────────────────────────────────────────────────────────────────────────────

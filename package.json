@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy":       "vite build && gh-pages -d dist",
-    "youtube-sync": "node scripts/youtube-fetch.js"
+    "youtube-sync": "node scripts/youtube-fetch.js",
+    "shopify-sync":   "node scripts/shopify-fetch.js"
   },
   "dependencies": {
     "react": "^19.0.0",

@@ -7,6 +7,7 @@
 import React, { useState } from "react";
 import { useNavigate }     from "react-router-dom";
 import { SITE, COLORS }    from "../config/site.js";
+import { useProducts } from "../hooks/useProducts.js";
 import { useWindowWidth }  from "../hooks/useWindowWidth.js";
 
 const PREVIEW_PRODUCTS = [
@@ -30,6 +31,9 @@ export default function HomePage() {
   const isMobile  = width < 768;
   const isTablet  = width >= 768 && width < 1024;
   const isSmall   = width < 1024;
+
+  const { products }       = useProducts();
+  const previewProducts    = products.slice(0, 3); // 3 premiers produits
 
   return (
     <div>
@@ -134,20 +138,28 @@ export default function HomePage() {
           ...s.grid3,
           gridTemplateColumns: isMobile ? "1fr" : isTablet ? "repeat(2, 1fr)" : "repeat(3, 1fr)",
         }}>
-          {PREVIEW_PRODUCTS.map((p, i) => (
+          {previewProducts.map((p, i) => (
             <div key={i} style={s.productCard}>
               <div style={s.productImg}>
-                <img src={p.image} alt={p.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                <a href={p.shopUrl} target="_blank" rel="noopener noreferrer"
+                  style={{ display: "block", width: "100%", height: "100%" }}>
+                  {p.image
+                    ? <img src={p.image} alt={p.title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    : <div style={{ width: "100%", height: "100%", background: "linear-gradient(135deg,#e3f0ff,#fce4f3)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 48 }}>👕</div>
+                  } 
+                </a>
               </div>
               <div style={s.cardBody}>
-                <div style={s.cardTitle}>{p.name}</div>
-                <div style={{ color: COLORS.pink, fontWeight: 800, fontSize: 16, margin: "6px 0" }}>{p.price}</div>
-                <button style={s.btnPink} onClick={() => navigate("/shop")}>
-                  Ajouter au panier
-                </button>
+                <div style={s.cardTitle}>{p.title}</div>
+                <div style={{ color: COLORS.pink, fontWeight: 800, fontSize: 16, margin: "6px 0" }}>
+                {p.price.toLocaleString("fr-FR", { minimumFractionDigits: 2 })} €
               </div>
-            </div>
-          ))}
+              <button style={s.btnPink} onClick={() => window.open(p.shopUrl, "_blank")}>
+                Voir le produit
+              </button>
+          </div>
+        </div>
+      ))}
         </div>
         <div style={{ textAlign: "center", marginTop: 24 }}>
           <button style={s.btnOutlinePink} onClick={() => navigate("/shop")}>
