@@ -1,0 +1,372 @@
+[
+  {
+    "id": 15837186654589,
+    "handle": "t-shirt-classique-solola-verite-studio",
+    "title": "T-shirt classique Solola verité studio",
+    "description": "Le t-shirt classique unisexe 100 % coton vous aidera à obtenir un look plus structuré. Sa jolie coupe et ses lignes nettes sur les bords en font un vêtement facile à assortir avec les tenues streetwear superposées. De plus, il est extrêmement tendance maintenant !<br>\n<br>\n• 100 % coton<br>\n• Le gris sport est composé de 90 % de coton et de 10 % de polyester<br>\n• Le gris cendré est composé de 99 % de coton et de 1 % de polyester<br>\n• Les couleurs chinées sont 50 % de coton et 50 % de polyester<br>\n• Poids du tissu : 170-180 g/m² (5,0-5,3 oz/yd²)<br>\n• Fil ouvert<br>\n• Tissu tubulaire<br>\n• Ruban au col et aux épaules<br>\n• Double couture aux manches et à l'ourlet inférieur<br>\n• Produit vierge provenant du Honduras, du Nicaragua, d'Haïti, de la République dominicaine, du Bangladesh, du Mexique<br>\n<br>\nAvertissements : <br>\n• En raison des propriétés du tissu, la variante de couleur blanche peut apparaître blanc cassé plutôt que blanc vif.<br>\n• Des taches de couleur foncée peuvent être observées pour la couleur Natural.",
+    "type": "T-SHIRT",
+    "tags": [],
+    "available": true,
+    "createdAt": "2026-03-15T17:58:11+01:00",
+    "price": 50,
+    "compareAtPrice": null,
+    "currency": "EUR",
+    "url": "/products/t-shirt-classique-solola-verite-studio",
+    "shopUrl": "https://shop.sololaveritestudio.com/products/t-shirt-classique-solola-verite-studio",
+    "featuredImage": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-front-69b6e514c5fda.jpg?v=1774016230",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-front-69b6e514c5fda.jpg?v=1774016230",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-back-69b6e514c4461.jpg?v=1774016230",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-front-and-back-69b6e514c6af3.jpg?v=1774016230",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-left-69b6e514c5787.jpg?v=1774016230",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-right-69b6e514c4e40.jpg?v=1774016230",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-front-69b6e514c5e90.jpg?v=1774016230",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-back-69b6e514c3ca3.jpg?v=1774016230",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-front-and-back-69b6e514c69a6.jpg?v=1774016535",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-left-69b6e514c56b9.jpg?v=1774016535",
+        "alt": "T-shirt classique Solola verité studio"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-right-69b6e514c4cf9.jpg?v=1774016535",
+        "alt": "T-shirt classique Solola verité studio"
+      }
+    ],
+    "options": [
+      {
+        "name": "Couleur",
+        "values": [
+          "Bordeaux",
+          "Noir"
+        ]
+      },
+      {
+        "name": "Taille",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2 XL",
+          "3XL",
+          "4XL",
+          "5XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 57934119010685,
+        "title": "Bordeaux / S",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Bordeaux"
+          },
+          {
+            "name": "Taille",
+            "value": "S"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119043453,
+        "title": "Bordeaux / M",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Bordeaux"
+          },
+          {
+            "name": "Taille",
+            "value": "M"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119076221,
+        "title": "Bordeaux / L",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Bordeaux"
+          },
+          {
+            "name": "Taille",
+            "value": "L"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119108989,
+        "title": "Bordeaux / XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Bordeaux"
+          },
+          {
+            "name": "Taille",
+            "value": "XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119141757,
+        "title": "Bordeaux / 2 XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Bordeaux"
+          },
+          {
+            "name": "Taille",
+            "value": "2 XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119174525,
+        "title": "Bordeaux / 3XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Bordeaux"
+          },
+          {
+            "name": "Taille",
+            "value": "3XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119207293,
+        "title": "Bordeaux / 4XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Bordeaux"
+          },
+          {
+            "name": "Taille",
+            "value": "4XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119240061,
+        "title": "Bordeaux / 5XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Bordeaux"
+          },
+          {
+            "name": "Taille",
+            "value": "5XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119272829,
+        "title": "Noir / S",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Noir"
+          },
+          {
+            "name": "Taille",
+            "value": "S"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119305597,
+        "title": "Noir / M",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Noir"
+          },
+          {
+            "name": "Taille",
+            "value": "M"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119338365,
+        "title": "Noir / L",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Noir"
+          },
+          {
+            "name": "Taille",
+            "value": "L"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119371133,
+        "title": "Noir / XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Noir"
+          },
+          {
+            "name": "Taille",
+            "value": "XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119403901,
+        "title": "Noir / 2 XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Noir"
+          },
+          {
+            "name": "Taille",
+            "value": "2 XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119436669,
+        "title": "Noir / 3XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Noir"
+          },
+          {
+            "name": "Taille",
+            "value": "3XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119469437,
+        "title": "Noir / 4XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Noir"
+          },
+          {
+            "name": "Taille",
+            "value": "4XL"
+          }
+        ],
+        "image": null
+      },
+      {
+        "id": 57934119502205,
+        "title": "Noir / 5XL",
+        "available": true,
+        "price": 50,
+        "compareAt": null,
+        "options": [
+          {
+            "name": "Couleur",
+            "value": "Noir"
+          },
+          {
+            "name": "Taille",
+            "value": "5XL"
+          }
+        ],
+        "image": null
+      }
+    ]
+  }
+]
