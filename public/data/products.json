@@ -1,5 +1,113 @@
 [
   {
+    "id": 15841315619197,
+    "handle": "solola-verite-studio-t-shirt-col",
+    "title": "Solola Vérité Studio T-shirt col",
+    "type": "T-SHIRT",
+    "available": true,
+    "price": 45,
+    "compareAt": null,
+    "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-t-shirt-col",
+    "image": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-organic-oversized-high-neck-t-shirt-white-front-69c006026b805.jpg?v=1774192149",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-organic-oversized-high-neck-t-shirt-white-front-69c006026b805.jpg?v=1774192149",
+        "alt": "Solola Vérité Studio T-shirt col"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-organic-oversized-high-neck-t-shirt-white-back-69c006026ca5d.jpg?v=1774192149",
+        "alt": "Solola Vérité Studio T-shirt col"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-organic-oversized-high-neck-t-shirt-white-left-69c006026d360.jpg?v=1774192149",
+        "alt": "Solola Vérité Studio T-shirt col"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-organic-oversized-high-neck-t-shirt-white-right-69c006026dc70.jpg?v=1774192148",
+        "alt": "Solola Vérité Studio T-shirt col"
+      }
+    ],
+    "options": [
+      {
+        "name": "Taille",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2 XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 57957332844925,
+        "title": "S",
+        "available": true,
+        "price": 45,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "S"
+          }
+        ]
+      },
+      {
+        "id": 57957332877693,
+        "title": "M",
+        "available": true,
+        "price": 45,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "M"
+          }
+        ]
+      },
+      {
+        "id": 57957332910461,
+        "title": "L",
+        "available": true,
+        "price": 45,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "L"
+          }
+        ]
+      },
+      {
+        "id": 57957332943229,
+        "title": "XL",
+        "available": true,
+        "price": 45,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "XL"
+          }
+        ]
+      },
+      {
+        "id": 57957332975997,
+        "title": "2 XL",
+        "available": true,
+        "price": 45,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "2 XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 15841295827325,
     "handle": "solola-verite-studio-sweat-a-capuche",
     "title": "Solola Vérité Studio Sweat à capuche",
