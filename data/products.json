@@ -1,54 +1,192 @@
 [
   {
-    "id": 15837186654589,
-    "handle": "t-shirt-classique-solola-verite-studio",
-    "title": "T-shirt classique Solola verité studio",
+    "id": 15841295827325,
+    "handle": "solola-verite-studio-sweat-a-capuche",
+    "title": "Solola Vérité Studio Sweat à capuche",
     "type": "T-SHIRT",
     "available": true,
-    "price": 50,
+    "price": 55,
+    "compareAt": null,
+    "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-sweat-a-capuche",
+    "image": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-front-69bff74698425.jpg?v=1774188383",
+    "images": [
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-front-69bff74698425.jpg?v=1774188383",
+        "alt": "Solola Vérité Studio Sweat à capuche"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-back-69bff746975a8.jpg?v=1774189200",
+        "alt": "Solola Vérité Studio Sweat à capuche"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-front-69bff74693cf3.jpg?v=1774189200",
+        "alt": "Solola Vérité Studio Sweat à capuche"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-back-69bff74694ac0.jpg?v=1774189200",
+        "alt": "Solola Vérité Studio Sweat à capuche"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-front-69bff74691015.jpg?v=1774189229",
+        "alt": "Solola Vérité Studio Sweat à capuche"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-back-2-69bff74692f0c.jpg?v=1774189229",
+        "alt": "Solola Vérité Studio Sweat à capuche"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-left-69bff746958a1.jpg?v=1774189229",
+        "alt": "Solola Vérité Studio Sweat à capuche"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-heavy-blend-hoodie-black-right-69bff746966d3.jpg?v=1774189200",
+        "alt": "Solola Vérité Studio Sweat à capuche"
+      }
+    ],
+    "options": [
+      {
+        "name": "Taille",
+        "values": [
+          "S",
+          "M",
+          "L",
+          "XL",
+          "2 XL",
+          "3XL"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 57957198037373,
+        "title": "S",
+        "available": true,
+        "price": 55,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "S"
+          }
+        ]
+      },
+      {
+        "id": 57957198070141,
+        "title": "M",
+        "available": true,
+        "price": 55,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "M"
+          }
+        ]
+      },
+      {
+        "id": 57957198102909,
+        "title": "L",
+        "available": true,
+        "price": 55,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "L"
+          }
+        ]
+      },
+      {
+        "id": 57957198135677,
+        "title": "XL",
+        "available": true,
+        "price": 55,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "XL"
+          }
+        ]
+      },
+      {
+        "id": 57957198168445,
+        "title": "2 XL",
+        "available": true,
+        "price": 55,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "2 XL"
+          }
+        ]
+      },
+      {
+        "id": 57957198201213,
+        "title": "3XL",
+        "available": true,
+        "price": 55,
+        "image": null,
+        "options": [
+          {
+            "name": "Taille",
+            "value": "3XL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15837186654589,
+    "handle": "t-shirt-classique-solola-verite-studio",
+    "title": "T-shirt classique Solola Verité Studio",
+    "type": "T-SHIRT",
+    "available": true,
+    "price": 35,
     "compareAt": null,
     "shopUrl": "https://solola-verite-studio.myshopify.com/products/t-shirt-classique-solola-verite-studio",
     "image": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-front-69b6e514c5fda.jpg?v=1774016230",
     "images": [
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-front-69b6e514c5fda.jpg?v=1774016230",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-back-69b6e514c4461.jpg?v=1774016230",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-front-and-back-69b6e514c6af3.jpg?v=1774016230",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-left-69b6e514c5787.jpg?v=1774016230",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-maroon-right-69b6e514c4e40.jpg?v=1774016230",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-front-69b6e514c5e90.jpg?v=1774016230",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-back-69b6e514c3ca3.jpg?v=1774016230",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-front-and-back-69b6e514c69a6.jpg?v=1774016535",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-left-69b6e514c56b9.jpg?v=1774016535",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       },
       {
         "url": "https://cdn.shopify.com/s/files/1/0940/4307/9037/files/unisex-classic-tee-black-right-69b6e514c4cf9.jpg?v=1774016535",
-        "alt": "T-shirt classique Solola verité studio"
+        "alt": "T-shirt classique Solola Verité Studio"
       }
     ],
     "options": [
@@ -78,7 +216,7 @@
         "id": 57934119010685,
         "title": "Bordeaux / S",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -95,7 +233,7 @@
         "id": 57934119043453,
         "title": "Bordeaux / M",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -112,7 +250,7 @@
         "id": 57934119076221,
         "title": "Bordeaux / L",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -129,7 +267,7 @@
         "id": 57934119108989,
         "title": "Bordeaux / XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -146,7 +284,7 @@
         "id": 57934119141757,
         "title": "Bordeaux / 2 XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -163,7 +301,7 @@
         "id": 57934119174525,
         "title": "Bordeaux / 3XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -180,7 +318,7 @@
         "id": 57934119207293,
         "title": "Bordeaux / 4XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -197,7 +335,7 @@
         "id": 57934119240061,
         "title": "Bordeaux / 5XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -214,7 +352,7 @@
         "id": 57934119272829,
         "title": "Noir / S",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -231,7 +369,7 @@
         "id": 57934119305597,
         "title": "Noir / M",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -248,7 +386,7 @@
         "id": 57934119338365,
         "title": "Noir / L",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -265,7 +403,7 @@
         "id": 57934119371133,
         "title": "Noir / XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -282,7 +420,7 @@
         "id": 57934119403901,
         "title": "Noir / 2 XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -299,7 +437,7 @@
         "id": 57934119436669,
         "title": "Noir / 3XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -316,7 +454,7 @@
         "id": 57934119469437,
         "title": "Noir / 4XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
@@ -333,7 +471,7 @@
         "id": 57934119502205,
         "title": "Noir / 5XL",
         "available": true,
-        "price": 50,
+        "price": 35,
         "image": null,
         "options": [
           {
