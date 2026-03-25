@@ -68,12 +68,12 @@ export default function EpisodesPage() {
 
   return (
     <div style={{
-      background:    COLORS.dark,
-      height:        isMobile ? "auto" : "100vh",
-      minHeight:     isMobile ? "100vh" : "auto",
-      display:       "flex",
+      background: COLORS.dark,
+      height: isMobile ? "auto" : "calc(100vh - 64px)", // 64px = hauteur navbar
+      minHeight: isMobile ? "calc(100vh - 64px)" : "auto",
+      display: "flex",
       flexDirection: "column",
-      overflow:      isMobile ? "auto" : "hidden",
+      overflow: isMobile ? "auto" : "hidden",
     }}>
 
       {/* ── Header ──────────────────────────────────────────────────── */}
