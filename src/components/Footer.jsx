@@ -27,7 +27,7 @@ const SOCIALS = [
     ),
   },
   {
-    name: "TikTok", url: "https://www.tiktok.com/discover/solola-verite-tv",
+    name: "TikTok", url: "https://www.tiktok.com/@sololaveritestudio",
     icon: (
       <svg viewBox="0 0 24 24" width="20" height="20">
         <rect width="24" height="24" rx="6" fill="#010101"/>
