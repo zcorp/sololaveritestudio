@@ -52,6 +52,8 @@ export default function EpisodesPage() {
   const displayed = filtered.slice(0, visible);
   const hasMore   = visible < filtered.length;
 
+  console.log("visible:", visible, "filtered:", filtered.length, "hasMore:", hasMore);
+
   const loaderRef = useRef(null);
   useEffect(() => {
     if (!loaderRef.current) return;
@@ -69,9 +71,11 @@ export default function EpisodesPage() {
   return (
     <div style={{
       background:    COLORS.dark,
-  display:       "flex",
-  flexDirection: "column",
-  minHeight:     "calc(100vh - 64px)",
+      height:        isMobile ? "auto" : "100vh",
+      minHeight:     isMobile ? "100vh" : "auto",
+      display:       "flex",
+      flexDirection: "column",
+      overflow:      isMobile ? "auto" : "hidden",
     }}>
 
       {/* ── Header ──────────────────────────────────────────────────── */}
@@ -204,71 +208,70 @@ export default function EpisodesPage() {
 
       {/* ── Grille épisodes ──────────────────────────────────────────── */}
       <div style={{
-        flex:      isMobile ? "none" : 1,
-        overflow:  isMobile ? "visible" : "hidden",
-        padding:   isMobile ? "0 16px 24px" : "0 32px 24px",
-        maxWidth:  1200,
-        margin:    "0 auto",
-        width:     "100%",
-        boxSizing: "border-box",
-      }}>
-        <div style={{ color: "rgba(255,255,255,.4)", fontSize: 12, marginBottom: 12, fontWeight: 600, letterSpacing: 1 }}>
-          {filtered.length} ÉPISODE{filtered.length > 1 ? "S" : ""}
-        </div>
+  padding:   isMobile ? "0 16px 24px" : "0 32px 24px",
+  maxWidth:  1200,
+  margin:    "0 auto",
+  width:     "100%",
+  boxSizing: "border-box",
+}}>
+  <div style={{ color: "rgba(255,255,255,.4)", fontSize: 12, marginBottom: 12, fontWeight: 600, letterSpacing: 1 }}>
+    {filtered.length} ÉPISODE{filtered.length > 1 ? "S" : ""}
+  </div>
 
-        {/* Container scrollable sur desktop, naturel sur mobile */}
-        <div style={{
-          height:     isMobile ? "auto" : "100%",
-          overflowY:  isMobile ? "visible" : "auto",
-        }}>
-          <div style={{ display: "grid", gridTemplateColumns: gridCols, gap: 12 }}>
-            {displayed.map(ep => (
-              <div key={ep.videoId} onClick={() => {
-                setActiveEp(ep) 
-                if (isMobile && playerRef.current) {
-                  playerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
-                }
-              }}
-                style={{
-                  background:  activeEp?.videoId === ep.videoId ? "rgba(255,255,255,.07)" : "#111827",
-                  borderRadius: 10,
-                  overflow:    "hidden",
-                  cursor:      "pointer",
-                  border:      activeEp?.videoId === ep.videoId ? `1px solid ${COLORS.pink}` : "1px solid rgba(255,255,255,.06)",
-                  transition:  "all .2s",
-                }}>
-                <div style={{ aspectRatio: "16/9", position: "relative", overflow: "hidden" }}>
-                  <img
-                    src={ep.thumbnail ?? `https://img.youtube.com/vi/${ep.videoId}/hqdefault.jpg`}
-                    alt={ep.title}
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  />
-                  {ep.hot && <div style={{ position: "absolute", top: 6, right: 6, fontSize: 12 }}>🔥</div>}
-                </div>
-                <div style={{ padding: "10px 12px" }}>
-                  <div style={{ color: "#fff", fontSize: 12, fontWeight: 700, lineHeight: 1.4 }}>{ep.title}</div>
-                  <div style={{ color: "rgba(255,255,255,.35)", fontSize: 11, marginTop: 4 }}>{ep.views}</div>
-                </div>
-              </div>
-            ))}
+  {/* Container scrollable avec hauteur max sur desktop */}
+  <div style={{
+    maxHeight: isMobile ? "none" : "calc(100vh - 64px - 48px - 280px)",
+    overflowY: isMobile ? "visible" : "auto",
+    paddingRight: isMobile ? 0 : 4,
+    overflowX:     "visible",
+    paddingBottom: 70,
+  }}>
+    <div style={{ display: "grid", gridTemplateColumns: gridCols, gap: 12 }}>
+      {displayed.map(ep => (
+        <div key={ep.videoId} onClick={() => {
+          setActiveEp(ep);
+          if (isMobile && playerRef.current) {
+            playerRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }}
+          style={{
+            background:   activeEp?.videoId === ep.videoId ? "rgba(255,255,255,.07)" : "#111827",
+            borderRadius: 10,
+            overflow:     "hidden",
+            cursor:       "pointer",
+            border:       activeEp?.videoId === ep.videoId ? `1px solid ${COLORS.pink}` : "1px solid rgba(255,255,255,.06)",
+            transition:   "all .2s",
+          }}>
+          <div style={{ aspectRatio: "16/9", position: "relative", overflow: "hidden" }}>
+            <img
+              src={ep.thumbnail ?? `https://img.youtube.com/vi/${ep.videoId}/hqdefault.jpg`}
+              alt={ep.title}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+            {ep.hot && <div style={{ position: "absolute", top: 6, right: 6, fontSize: 12 }}>🔥</div>}
           </div>
-
-          {hasMore && (
-            <div style={{ textAlign: "center", padding: "24px 0" }}>
-              <button
-                onClick={() => setVisible(v => v + 9)}
-                style={{ background: "rgba(255,255,255,.07)", color: "#fff", border: "1px solid rgba(255,255,255,.15)", padding: "10px 28px", borderRadius: 8, fontSize: 13, fontWeight: 600, cursor: "pointer" }}>
-                Voir plus d'épisodes
-              </button>
-            </div>
-          )}
-          {!hasMore && filtered.length > 0 && (
-            <div style={{ textAlign: "center", padding: "24px 0", color: "rgba(255,255,255,.2)", fontSize: 12 }}>
-              — Tous les épisodes sont affichés —
-            </div>
-          )}
+          <div style={{ padding: "10px 12px" }}>
+            <div style={{ color: "#fff", fontSize: 12, fontWeight: 700, lineHeight: 1.4 }}>{ep.title}</div>
+            <div style={{ color: "rgba(255,255,255,.35)", fontSize: 11, marginTop: 4 }}>{ep.views}</div>
+          </div>
         </div>
-      </div>
+      ))}
+    </div>
+    <div style={{ textAlign: "center", padding: "24px 0 110px" }}>
+      {hasMore ? (
+        <button
+          onClick={() => setVisible(v => v + 9)}
+          style={{ background: "rgba(255,255,255,.07)", color: "#fff", border: "1px solid rgba(255,255,255,.15)", padding: "10px 28px", borderRadius: 8, fontSize: 13, fontWeight: 600, cursor: "pointer" }}>
+          Voir plus d'épisodes
+        </button>
+      ) : (
+        <div style={{ color: "rgba(255,255,255,.2)", fontSize: 12 }}>
+          — Tous les épisodes sont affichés —
+        </div>
+      )}
+    </div>
+  </div>
+</div>
 
     </div>
   );
