@@ -160,7 +160,7 @@ export default function EpisodesPage() {
         display: "grid",
         gridTemplateColumns: "1fr 360px",
         gap:     0,
-        overflow: "hidden",
+        overflow: "hidden",  // ← important
         maxWidth: 1200,
         margin:  "0 auto",
         width:   "100%",
@@ -199,10 +199,9 @@ export default function EpisodesPage() {
             </button>
           </div>
         </div>
-
         {/* ── Liste épisodes droite (style YouTube) ─────────────────── */}
-        <div style={{ display: "flex", flexDirection: "column", overflow: "hidden" }}>
-          <div style={{ color: "rgba(255,255,255,.4)", fontSize: 12, marginBottom: 10, fontWeight: 600, letterSpacing: 1, flexShrink: 0 }}>
+          <div style={{ display: "flex", flexDirection: "column", overflow: "hidden", height: "700px" }}>
+           <div style={{ color: "rgba(255,255,255,.4)", fontSize: 12, marginBottom: 10, fontWeight: 600, letterSpacing: 1, flexShrink: 0 }}>
             {filtered.length} ÉPISODE{filtered.length > 1 ? "S" : ""}
           </div>
 
