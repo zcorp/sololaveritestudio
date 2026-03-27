@@ -17,12 +17,12 @@ const PREVIEW_PRODUCTS = [
 ];
 
 const STUDIO_PHOTOS = [
-  { src: null, alt: "Vue générale du plateau", wide: true  },
-  { src: null, alt: "La régie",                wide: true },
-  { src: null, alt: "Espace invités",          wide: true },
-  { src: null, alt: "Caméra principale",       wide: true },
-  { src: null, alt: "Les coulisses",           wide: true },
-  { src: null, alt: "La console son",          wide: true  },
+  { src: "public/svs/plateau3.jpg", alt: "Vue générale du plateau", wide: true  },
+  { src: "public/svs/coulisses.jpg", alt: "Les coulisses",           wide: true },
+  { src: "public/svs/regie.jpg", alt: "La régie",                wide: true },
+  { src: "public/svs/espace_invites.jpg", alt: "Espace invités",          wide: true },
+  { src: "public/svs/espace_invites2.jpg", alt: "Espace invités",          wide: true  },
+  { src: "public/svs/bureau.jpg", alt: "Bureau",       wide: true },
 ];
 
 export default function HomePage() {
