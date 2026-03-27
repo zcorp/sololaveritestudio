@@ -73,18 +73,23 @@ export default function EpisodesPage() {
 
   useEffect(() => {
   const update = () => {
-    if (containerRef.current) {
-      const rect   = containerRef.current.getBoundingClientRect();
-      const footer = document.querySelector("footer");
-      const footerTop = footer ? footer.getBoundingClientRect().top : window.innerHeight;
-      setMaxH(`${footerTop - rect.top - 174}px`);
-    }
+    // Petit délai pour laisser le DOM se re-rendre après changement de breakpoint
+    setTimeout(() => {
+      if (containerRef.current) {
+        const rect      = containerRef.current.getBoundingClientRect();
+        const footer    = document.querySelector("footer");
+        const footerTop = footer ? footer.getBoundingClientRect().top : window.innerHeight;
+        const newMaxH   = `${footerTop - rect.top - 24}px`;
+        //console.log("MaxH : ", newMaxH);
+        setMaxH(newMaxH);
+      }
+    }, 100);
   };
+
   update();
   window.addEventListener("resize", update);
   return () => window.removeEventListener("resize", update);
-}, []);
-
+}, [isSmallLaptop, width]); // ← ajoute width pour recalculer à chaque resize
 
   return (
   <div style={{
