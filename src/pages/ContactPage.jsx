@@ -5,13 +5,9 @@ import React, { useState } from "react";
 import { COLORS }          from "../config/site.js";
 import { useWindowWidth }  from "../hooks/useWindowWidth.js";
 
-/*const SOCIALS = [
-  { name: "YouTube",   handle: "@sololaveritestudio", emoji: "▶️", color: "#FF0000", url: "https://youtube.com/@sololaveritestudio" },
-  { name: "Instagram", handle: "@sololaveritestudio", emoji: "📷", color: "#E1306C", url: "https://www.instagram.com/sololaveritetvoff"           },
-  { name: "TikTok",    handle: "@sololaveritestudio", emoji: "🎵", color: "#010101", url: "https://www.tiktok.com/discover/solola-verite-tv"             },
-  { name: "Facebook", handle: "@sololaveritestudio",  emoji: "📘",  color: "#1877F2", url: "https://www.facebook.com/sololaveritestudio/"                  },
-  //{ name: "Twitter/X", handle: "@sololaveritestudio",           emoji: "𝕏",  color: "#1DA1F2", url: "https://x.com/sololaveritestudio"                  },
-];*/
+// ← Remplace par le vrai numéro WhatsApp (sans +, sans espaces)
+const WHATSAPP_NUMBER = "33766511033";
+const PHONE_NUMBER    = "+33 7 66 51 10 33";
 
 const SOCIALS = [
   {
@@ -77,42 +73,14 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [focused,   setFocused]   = useState("");
 
-  /*const handleSubmit = () => {
-    if (!form.name || !form.email || !form.message) return;
-    window.location.href = `mailto:sololaveritestudio@outlook.fr`
-      + `?subject=[${encodeURIComponent(form.subject)}] - ${encodeURIComponent(form.name)}`
-      + `&body=${encodeURIComponent(form.message)}`;
+  const isValid = form.name && form.email && form.message;
+
+  // ── WhatsApp ──────────────────────────────────────────────────────────────
+  const handleWhatsApp = () => {
+    if (!isValid) return;
+    const text = `Bonjour, je m'appelle ${form.name} (${form.email}).\n\nObjet : ${form.subject}\n\n${form.message}`;
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank");
     setSubmitted(true);
-  };*/
-
-  const handleSubmit = async () => {
-    if (!form.name || !form.email || !form.message) return;
-
-    try {
-      const body = new URLSearchParams({
-        "form_type":          "contact",
-        "utf8":               "✓",
-        "contact[name]":      form.name,
-        "contact[email]":     form.email,
-        "contact[body]":      `[${form.subject}]\n\n${form.message}`,
-      });
-
-      const res = await fetch("https://shop.sololaveritestudio.com/contact", {
-        method:  "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body:    body.toString(),
-      });
-
-      // Shopify retourne toujours 200 ou une redirection
-      if (res.ok || res.status === 302) {
-        setSubmitted(true);
-      } else {
-        throw new Error(`HTTP ${res.status}`);
-      }
-    } catch(e) {
-      // Shopify bloque les requêtes cross-origin — fallback mailto
-      window.location.href = `mailto:contact@sololaveritestudio.com?subject=[${form.subject}]&body=${encodeURIComponent(form.message)}`;
-    }
   };
 
   const inputStyle = (field) => ({
@@ -134,9 +102,9 @@ export default function ContactPage() {
 
       {/* ── Hero header ───────────────────────────────────────────────── */}
       <div style={{
-        background:    `linear-gradient(135deg, ${COLORS.dark} 0%, #1a0a20 100%)`,
-        padding:       isMobile ? "40px 20px" : "56px 40px",
-        textAlign:     "center",
+        background:  `linear-gradient(135deg, ${COLORS.dark} 0%, #1a0a20 100%)`,
+        padding:     isMobile ? "40px 20px" : "56px 40px",
+        textAlign:   "center",
       }}>
         <div style={{ color: COLORS.pink, fontSize: 11, fontWeight: 800, letterSpacing: 4, marginBottom: 10 }}>
           📩 CONTACT
@@ -151,25 +119,25 @@ export default function ContactPage() {
           Parlons de Solola Vérité Studio
         </h1>
         <p style={{
-          color:     "rgba(255,255,255,.55)",
-          fontSize:  isMobile ? 13 : 15,
-          maxWidth:  500,
-          margin:    "0 auto",
+          color:      "rgba(255,255,255,.55)",
+          fontSize:   isMobile ? 13 : 15,
+          maxWidth:   500,
+          margin:     "0 auto",
           lineHeight: 1.7,
         }}>
-          Partenariats, invitations, presse — on vous répond sous 48h.
+          Partenariats, invitations, presse. On vous répond rapidement.
         </p>
       </div>
 
       {/* ── Content ───────────────────────────────────────────────────── */}
       <div style={{
-        maxWidth:  900,
-        margin:    "0 auto",
-        padding:   isMobile ? "28px 16px" : "48px 32px",
-        display:   "grid",
+        maxWidth:            900,
+        margin:              "0 auto",
+        padding:             isMobile ? "28px 16px" : "48px 32px",
+        display:             "grid",
         gridTemplateColumns: isMobile ? "1fr" : "1fr 1.4fr",
-        gap:       isMobile ? 28 : 40,
-        alignItems: "start",
+        gap:                 isMobile ? 28 : 40,
+        alignItems:          "start",
       }}>
 
         {/* ── Réseaux sociaux ───────────────────────────────────────── */}
@@ -190,14 +158,10 @@ export default function ContactPage() {
                   border:       "1px solid #eee",
                   borderRadius: 12,
                   cursor:       "pointer",
-                  transition:   "box-shadow .2s, transform .2s",
+                  transition:   "box-shadow .2s",
                   boxShadow:    "0 1px 4px rgba(0,0,0,.04)",
                 }}>
-                  <div style={{
-                    width: 42, height: 42, borderRadius: 10,
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    flexShrink: 0, overflow: "hidden",
-                  }}>
+                  <div style={{ width: 42, height: 42, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, overflow: "hidden" }}>
                     {s.icon}
                   </div>
                   <div style={{ flex: 1 }}>
@@ -210,7 +174,53 @@ export default function ContactPage() {
             ))}
           </div>
 
-          {/* Email direct */}
+          {/* Contact direct */}
+          <div style={{ marginTop: 20, display: "flex", flexDirection: "column", gap: 10 }}>
+
+            {/* WhatsApp direct */}
+            <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}>
+              <div style={{
+                display: "flex", alignItems: "center", gap: 14,
+                padding: "14px 16px", background: "#fff",
+                border: "1px solid #eee", borderRadius: 12,
+                boxShadow: "0 1px 4px rgba(0,0,0,.04)",
+              }}>
+                <div style={{ width: 42, height: 42, borderRadius: 10, background: "#25D366", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  <svg viewBox="0 0 24 24" fill="white" width="22" height="22">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontWeight: 700, fontSize: 14, color: "#111" }}>WhatsApp</div>
+                  <div style={{ fontSize: 12, color: "#999", marginTop: 2 }}>Réponse rapide</div>
+                </div>
+                <span style={{ color: "#ccc", fontSize: 16 }}>→</span>
+              </div>
+            </a>
+
+            {/* Call */}
+            <a href={`tel:${PHONE_NUMBER}`} style={{ textDecoration: "none" }}>
+              <div style={{
+                display: "flex", alignItems: "center", gap: 14,
+                padding: "14px 16px", background: "#fff",
+                border: `1px solid ${COLORS.blue}20`, borderRadius: 12,
+                boxShadow: "0 1px 4px rgba(0,0,0,.04)",
+              }}>
+                <div style={{ width: 42, height: 42, borderRadius: 10, background: COLORS.blue, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                  <svg viewBox="0 0 24 24" fill="none" width="22" height="22" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                  </svg>
+                </div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontWeight: 700, fontSize: 14, color: "#111" }}>Appeler</div>
+                  <div style={{ fontSize: 12, color: "#999", marginTop: 2 }}>{PHONE_NUMBER}</div>
+                </div>
+                <span style={{ color: "#ccc", fontSize: 16 }}>→</span>
+              </div>
+            </a>
+
+               {/* Email direct */}
           <div style={{
             marginTop:    20,
             padding:      "16px",
@@ -227,6 +237,9 @@ export default function ContactPage() {
             </div>
             <div style={{ color: "#aaa", fontSize: 11, marginTop: 4 }}>Réponse sous 48h ouvrées</div>
           </div>
+       
+
+          </div>
         </div>
 
         {/* ── Formulaire ────────────────────────────────────────────── */}
@@ -241,7 +254,7 @@ export default function ContactPage() {
             <div style={{ textAlign: "center", padding: "32px 0" }}>
               <div style={{ fontSize: 52, marginBottom: 14 }}>✅</div>
               <h4 style={{ color: COLORS.blue, marginBottom: 8, fontSize: 18 }}>Message envoyé !</h4>
-              <p style={{ color: "#888", fontSize: 14, marginBottom: 24 }}>On vous répond sous 48h.</p>
+              <p style={{ color: "#888", fontSize: 14, marginBottom: 24 }}>On vous répond rapidement sur WhatsApp.</p>
               <button
                 onClick={() => { setSubmitted(false); setForm({ name: "", email: "", subject: "Partenariat", message: "" }); }}
                 style={{ background: COLORS.pink, color: "#fff", border: "none", padding: "11px 24px", borderRadius: 8, fontWeight: 700, cursor: "pointer", fontSize: 14 }}>
@@ -277,7 +290,7 @@ export default function ContactPage() {
                   ))}
                 </div>
 
-                {/* Objet — pills cliquables */}
+                {/* Objet */}
                 <div>
                   <div style={{ fontSize: 12, fontWeight: 600, color: "#666", marginBottom: 8 }}>Objet</div>
                   <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
@@ -313,26 +326,65 @@ export default function ContactPage() {
                   />
                 </div>
 
-                {/* Submit */}
-                <button
-                  onClick={handleSubmit}
-                  style={{
-                    background:   form.name && form.email && form.message ? COLORS.blue : "#e0e0e0",
-                    color:        form.name && form.email && form.message ? "#fff" : "#aaa",
-                    border:       "none",
-                    padding:      "13px",
-                    borderRadius: 10,
-                    fontWeight:   700,
-                    cursor:       form.name && form.email && form.message ? "pointer" : "not-allowed",
-                    fontSize:     14,
-                    transition:   "background .2s",
-                    letterSpacing: 0.5,
-                  }}>
-                  {form.name && form.email && form.message ? "Envoyer le message →" : "Remplissez tous les champs"}
-                </button>
+                {/* Boutons */}
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+
+                  {/* WhatsApp */}
+                  <button onClick={handleWhatsApp}
+                    style={{
+                      background:     isValid ? "#25D366" : "#e0e0e0",
+                      color:          isValid ? "#fff" : "#aaa",
+                      border:         "none",
+                      padding:        "13px",
+                      borderRadius:   10,
+                      fontWeight:     700,
+                      cursor:         isValid ? "pointer" : "not-allowed",
+                      fontSize:       14,
+                      display:        "flex",
+                      alignItems:     "center",
+                      justifyContent: "center",
+                      gap:            8,
+                      transition:     "background .2s",
+                    }}>
+                    <svg viewBox="0 0 24 24" fill="white" width="18" height="18">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    {isValid ? "Envoyer via WhatsApp" : "Remplissez tous les champs"}
+                  </button>
+
+                  {/* Séparateur */}
+                  <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                    <div style={{ flex: 1, height: 1, background: "#f0f0f0" }} />
+                    <span style={{ color: "#ccc", fontSize: 12 }}>ou</span>
+                    <div style={{ flex: 1, height: 1, background: "#f0f0f0" }} />
+                  </div>
+
+                  {/* Call */}
+                  <a href={`tel:${PHONE_NUMBER}`}
+                    style={{
+                      background:     COLORS.blue,
+                      color:          "#fff",
+                      padding:        "13px",
+                      borderRadius:   10,
+                      fontWeight:     700,
+                      fontSize:       14,
+                      textDecoration: "none",
+                      display:        "flex",
+                      alignItems:     "center",
+                      justifyContent: "center",
+                      gap:            8,
+                      transition:     "background .2s",
+                    }}>
+                    <svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    Appeler directement
+                  </a>
+
+                </div>
 
                 <p style={{ color: "#bbb", fontSize: 11, textAlign: "center", margin: 0 }}>
-                  🔒 Vos données ne sont jamais partagées.
+                  100 % gratuit, aucune donnée stockée.
                 </p>
               </div>
             </>
