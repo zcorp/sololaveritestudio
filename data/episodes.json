@@ -1,6 +1,45 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "6a3FBH1il_I",
+    "title": "FERRE GOLA ACCOR ARENA DÉBUT DU CONCERT",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/6a3FBH1il_I/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-04-04T22:10:28+00:00"
+    },
+    "updated": "2026-04-05T08:22:24+00:00",
+    "url": "https://www.youtube.com/watch?v=6a3FBH1il_I",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "kGWffbFdbp4",
+    "title": "FERRE GOLA BATU BA KUFA BALAMUKI NA PARIS PLEIN À CRAQUER ",
+    "description": "",
+    "thumbnail": "https://i4.ytimg.com/vi/kGWffbFdbp4/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-04-04T19:08:35+00:00"
+    },
+    "updated": "2026-04-05T07:09:37+00:00",
+    "url": "https://www.youtube.com/watch?v=kGWffbFdbp4",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "BZRiVzdUBKI",
+    "title": "FERRE GOLA DÉMONSTRATION DE FORCE YA BOYE NANU ESALEMA TE NA PARIS ",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/BZRiVzdUBKI/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-04-04T18:04:14+00:00"
+    },
+    "updated": "2026-04-05T07:19:37+00:00",
+    "url": "https://www.youtube.com/watch?v=BZRiVzdUBKI",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "o49xo2hpteY",
     "title": "FERRE GOLA ACCOR ARENA TOMBE BA GOLOIS BAYE MOBONDO",
     "description": "",
