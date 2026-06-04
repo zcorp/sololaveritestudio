@@ -1,6 +1,19 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "YIpLaSMjRds",
+    "title": "4 juin 2026",
+    "description": "",
+    "thumbnail": "https://i2.ytimg.com/vi/YIpLaSMjRds/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-06-04T07:54:58+00:00"
+    },
+    "updated": "2026-06-04T08:05:03+00:00",
+    "url": "https://www.youtube.com/watch?v=YIpLaSMjRds",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "KESbVGyRI5M",
     "title": "JDT MULOPWE VISITE YA SALLE CONFIRME PRESENCE YA FERRE GOLA COMME INVITE RENDEZ-VOUS LE 13 JUIN",
     "description": "",
