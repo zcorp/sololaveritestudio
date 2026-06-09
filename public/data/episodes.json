@@ -1,6 +1,19 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "nobePcjihp4",
+    "title": "9 juin 2026",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/nobePcjihp4/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-06-09T11:53:20+00:00"
+    },
+    "updated": "2026-06-09T12:10:34+00:00",
+    "url": "https://www.youtube.com/watch?v=nobePcjihp4",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "90w5YlzzhU0",
     "title": "8 juin 2026",
     "description": "",
