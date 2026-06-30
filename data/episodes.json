@@ -1,6 +1,19 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "VwPSRoRRSP8",
+    "title": "30 juin 2026",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/VwPSRoRRSP8/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-06-30T11:03:16+00:00"
+    },
+    "updated": "2026-06-30T11:25:08+00:00",
+    "url": "https://www.youtube.com/watch?v=VwPSRoRRSP8",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "B7JKMOpywzI",
     "title": "JPSON PREND LA PART DE KOFFI OLOMIDE ET CONFIRME SA PRÉSENCE AU STADE DE ROI BAUDOUIN LE 12-07",
     "description": "",
