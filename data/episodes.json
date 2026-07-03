@@ -1,6 +1,19 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "nx42Tvnw3YE",
+    "title": "3 juillet 2026",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/nx42Tvnw3YE/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-07-03T12:42:40+00:00"
+    },
+    "updated": "2026-07-03T13:10:08+00:00",
+    "url": "https://www.youtube.com/watch?v=nx42Tvnw3YE",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "3LvZwhUlFDU",
     "title": "HERITIER WATA SE CONFIE AVANT SON CONCERT DE ZENITH DE PARIS/CONFIRME FALLY ET JB COMME INVITÉ",
     "description": "",
