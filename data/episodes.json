@@ -1,6 +1,19 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "e3q0Roaxn7g",
+    "title": "14 juillet 2026",
+    "description": "",
+    "thumbnail": "https://i2.ytimg.com/vi/e3q0Roaxn7g/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-07-14T15:48:23+00:00"
+    },
+    "updated": "2026-07-14T16:38:04+00:00",
+    "url": "https://www.youtube.com/watch?v=e3q0Roaxn7g",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "0bRoaxYBXmk",
     "title": "POLÉMIQUE SUR LA MARQUE DE VOITURE DES NOS DEUX ARTISTES LES FANS S’EXPLIQUENT LE POURQUOI ?",
     "description": "",
