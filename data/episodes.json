@@ -1,6 +1,45 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "ZzlWUzbf1Vc",
+    "title": "JB MPIANA APRES SOLD OUT DEUXIEME DATE EN COUR/CONFIRMATION YA ROGER ML",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/ZzlWUzbf1Vc/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-07-28T15:24:08+00:00"
+    },
+    "updated": "2026-07-28T16:18:11+00:00",
+    "url": "https://www.youtube.com/watch?v=ZzlWUzbf1Vc",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "IHFL72c4aOM",
+    "title": "28 juillet 2026",
+    "description": "",
+    "thumbnail": "https://i2.ytimg.com/vi/IHFL72c4aOM/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-07-28T14:48:04+00:00"
+    },
+    "updated": "2026-07-28T15:41:11+00:00",
+    "url": "https://www.youtube.com/watch?v=IHFL72c4aOM",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "PYoc7xrxUK4",
+    "title": "28 juillet 2026",
+    "description": "",
+    "thumbnail": "https://i1.ytimg.com/vi/PYoc7xrxUK4/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-07-28T11:56:19+00:00"
+    },
+    "updated": "2026-07-28T12:18:03+00:00",
+    "url": "https://www.youtube.com/watch?v=PYoc7xrxUK4",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "eT9gTbY7mww",
     "title": "KOFFI OLOMIDE BO YOKA MAKAMBU DE LA MONTAGNE A BIMISI APRÈS CONCERT YA ROI BAUDOUIN",
     "description": "",
