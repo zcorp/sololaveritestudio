@@ -1,6 +1,19 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "jbuLObfQujY",
+    "title": "8 septembre 2026",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/jbuLObfQujY/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-09-08T19:28:54+00:00"
+    },
+    "updated": "2026-09-09T05:34:01+00:00",
+    "url": "https://www.youtube.com/watch?v=jbuLObfQujY",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "EfXjbFOGng0",
     "title": "DJINO KAPOREDJI CONFIRME JB MPIANA MOKONZI YABA WENGE/ BUT NA FILET AZA MUSICIEN TE",
     "description": "",
