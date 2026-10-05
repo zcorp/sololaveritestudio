@@ -4,7 +4,7 @@
     "handle": "solola-verite-studio-sweat-col-rond-unisexe-coupe-classique-2",
     "title": "Solola Vérité Studio - Sweat col rond unisexe, coupe classique",
     "type": "",
-    "available": false,
+    "available": true,
     "price": 45,
     "compareAt": null,
     "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-sweat-col-rond-unisexe-coupe-classique-2",
@@ -66,7 +66,7 @@
       {
         "id": 57959627260285,
         "title": "Noir / S",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -83,7 +83,7 @@
       {
         "id": 57959627293053,
         "title": "Noir / M",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -100,7 +100,7 @@
       {
         "id": 57959627325821,
         "title": "Noir / L",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -117,7 +117,7 @@
       {
         "id": 57959627358589,
         "title": "Noir / XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -134,7 +134,7 @@
       {
         "id": 57959627391357,
         "title": "Noir / 2 XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -151,7 +151,7 @@
       {
         "id": 57959627424125,
         "title": "Blanc / S",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -168,7 +168,7 @@
       {
         "id": 57959627456893,
         "title": "Blanc / M",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -185,7 +185,7 @@
       {
         "id": 57959627489661,
         "title": "Blanc / L",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -202,7 +202,7 @@
       {
         "id": 57959627522429,
         "title": "Blanc / XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -219,7 +219,7 @@
       {
         "id": 57959627555197,
         "title": "Blanc / 2 XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -240,7 +240,7 @@
     "handle": "solola-verite-studio-t-shirt-col-montant-biologique-coupe-oversize-1",
     "title": "Solola Vérité Studio - T-shirt col montant biologique, coupe oversize",
     "type": "",
-    "available": false,
+    "available": true,
     "price": 35,
     "compareAt": null,
     "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-t-shirt-col-montant-biologique-coupe-oversize-1",
@@ -302,7 +302,7 @@
       {
         "id": 57959550321021,
         "title": "Noir / S",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -319,7 +319,7 @@
       {
         "id": 57959550353789,
         "title": "Noir / M",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -336,7 +336,7 @@
       {
         "id": 57959550386557,
         "title": "Noir / L",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -353,7 +353,7 @@
       {
         "id": 57959550419325,
         "title": "Noir / XL",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -370,7 +370,7 @@
       {
         "id": 57959550452093,
         "title": "Noir / 2 XL",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -387,7 +387,7 @@
       {
         "id": 57959550484861,
         "title": "Blanc / S",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -404,7 +404,7 @@
       {
         "id": 57959550517629,
         "title": "Blanc / M",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -421,7 +421,7 @@
       {
         "id": 57959550550397,
         "title": "Blanc / L",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -438,7 +438,7 @@
       {
         "id": 57959550583165,
         "title": "Blanc / XL",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -455,7 +455,7 @@
       {
         "id": 57959550615933,
         "title": "Blanc / 2 XL",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -476,7 +476,7 @@
     "handle": "solola-verite-studio-sweat-a-capuche-essentiel-coupe-decontractee-1",
     "title": "Solola Vérité Studio - Sweat à capuche essentiel, coupe décontractée",
     "type": "",
-    "available": false,
+    "available": true,
     "price": 55,
     "compareAt": null,
     "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-sweat-a-capuche-essentiel-coupe-decontractee-1",
@@ -538,7 +538,7 @@
       {
         "id": 57959525319037,
         "title": "Noir / S",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -555,7 +555,7 @@
       {
         "id": 57959525351805,
         "title": "Noir / M",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -572,7 +572,7 @@
       {
         "id": 57959525384573,
         "title": "Noir / L",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -589,7 +589,7 @@
       {
         "id": 57959525417341,
         "title": "Noir / XL",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -606,7 +606,7 @@
       {
         "id": 57959525450109,
         "title": "Noir / 2 XL",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -623,7 +623,7 @@
       {
         "id": 57959525482877,
         "title": "Blanc / S",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -640,7 +640,7 @@
       {
         "id": 57959525515645,
         "title": "Blanc / M",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -657,7 +657,7 @@
       {
         "id": 57959525548413,
         "title": "Blanc / L",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -674,7 +674,7 @@
       {
         "id": 57959525581181,
         "title": "Blanc / XL",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -691,7 +691,7 @@
       {
         "id": 57959525613949,
         "title": "Blanc / 2 XL",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -712,7 +712,7 @@
     "handle": "solola-verite-studio-sweat-col-rond-unisexe-coupe-classique-1",
     "title": "Solola Vérité Studio - Sweat col rond unisexe, coupe classique",
     "type": "",
-    "available": false,
+    "available": true,
     "price": 45,
     "compareAt": null,
     "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-sweat-col-rond-unisexe-coupe-classique-1",
@@ -774,7 +774,7 @@
       {
         "id": 57959507919229,
         "title": "Noir / S",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -791,7 +791,7 @@
       {
         "id": 57959507951997,
         "title": "Noir / M",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -808,7 +808,7 @@
       {
         "id": 57959507984765,
         "title": "Noir / L",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -825,7 +825,7 @@
       {
         "id": 57959508017533,
         "title": "Noir / XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -842,7 +842,7 @@
       {
         "id": 57959508050301,
         "title": "Noir / 2 XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -859,7 +859,7 @@
       {
         "id": 57959508083069,
         "title": "Blanc / S",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -876,7 +876,7 @@
       {
         "id": 57959508115837,
         "title": "Blanc / M",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -893,7 +893,7 @@
       {
         "id": 57959508148605,
         "title": "Blanc / L",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -910,7 +910,7 @@
       {
         "id": 57959508181373,
         "title": "Blanc / XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -927,7 +927,7 @@
       {
         "id": 57959508214141,
         "title": "Blanc / 2 XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -948,7 +948,7 @@
     "handle": "solola-verite-studio-sweat-col-rond-unisexe-coupe-classique",
     "title": "Solola Vérité Studio - Sweat col rond unisexe, coupe classique",
     "type": "",
-    "available": false,
+    "available": true,
     "price": 45,
     "compareAt": null,
     "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-sweat-col-rond-unisexe-coupe-classique",
@@ -1010,7 +1010,7 @@
       {
         "id": 57959483736445,
         "title": "Noir / S",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1027,7 +1027,7 @@
       {
         "id": 57959483769213,
         "title": "Noir / M",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1044,7 +1044,7 @@
       {
         "id": 57959483801981,
         "title": "Noir / L",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1061,7 +1061,7 @@
       {
         "id": 57959483834749,
         "title": "Noir / XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1078,7 +1078,7 @@
       {
         "id": 57959483867517,
         "title": "Noir / 2 XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1095,7 +1095,7 @@
       {
         "id": 57959483900285,
         "title": "Blanc / S",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1112,7 +1112,7 @@
       {
         "id": 57959483933053,
         "title": "Blanc / M",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1129,7 +1129,7 @@
       {
         "id": 57959483965821,
         "title": "Blanc / L",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1146,7 +1146,7 @@
       {
         "id": 57959483998589,
         "title": "Blanc / XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1163,7 +1163,7 @@
       {
         "id": 57959484031357,
         "title": "Blanc / 2 XL",
-        "available": false,
+        "available": true,
         "price": 45,
         "image": null,
         "options": [
@@ -1184,7 +1184,7 @@
     "handle": "solola-verite-studio-sweat-a-capuche-essentiel-coupe-decontractee",
     "title": "Solola Vérité Studio - Sweat à capuche essentiel, coupe décontractée",
     "type": "",
-    "available": false,
+    "available": true,
     "price": 55,
     "compareAt": null,
     "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-sweat-a-capuche-essentiel-coupe-decontractee",
@@ -1246,7 +1246,7 @@
       {
         "id": 57959433273725,
         "title": "Noir / S",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1263,7 +1263,7 @@
       {
         "id": 57959433306493,
         "title": "Noir / M",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1280,7 +1280,7 @@
       {
         "id": 57959433339261,
         "title": "Noir / L",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1297,7 +1297,7 @@
       {
         "id": 57959433372029,
         "title": "Noir / XL",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1314,7 +1314,7 @@
       {
         "id": 57959433404797,
         "title": "Noir / 2 XL",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1331,7 +1331,7 @@
       {
         "id": 57959433437565,
         "title": "Blanc / S",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1348,7 +1348,7 @@
       {
         "id": 57959433470333,
         "title": "Blanc / M",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1365,7 +1365,7 @@
       {
         "id": 57959433503101,
         "title": "Blanc / L",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1382,7 +1382,7 @@
       {
         "id": 57959433535869,
         "title": "Blanc / XL",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1399,7 +1399,7 @@
       {
         "id": 57959433568637,
         "title": "Blanc / 2 XL",
-        "available": false,
+        "available": true,
         "price": 55,
         "image": null,
         "options": [
@@ -1420,7 +1420,7 @@
     "handle": "solola-verite-studio-t-shirt-col-montant-biologique-coupe-oversize",
     "title": "Solola Vérité Studio - T-shirt col montant biologique, coupe oversize",
     "type": "T-SHIRT",
-    "available": false,
+    "available": true,
     "price": 35,
     "compareAt": null,
     "shopUrl": "https://solola-verite-studio.myshopify.com/products/solola-verite-studio-t-shirt-col-montant-biologique-coupe-oversize",
@@ -1482,7 +1482,7 @@
       {
         "id": 57959387660669,
         "title": "Noir / S",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1499,7 +1499,7 @@
       {
         "id": 57959387693437,
         "title": "Noir / M",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1516,7 +1516,7 @@
       {
         "id": 57959387726205,
         "title": "Noir / L",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1533,7 +1533,7 @@
       {
         "id": 57959387758973,
         "title": "Noir / XL",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1550,7 +1550,7 @@
       {
         "id": 57959387791741,
         "title": "Noir / 2 XL",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1567,7 +1567,7 @@
       {
         "id": 57959387824509,
         "title": "Blanc / S",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1584,7 +1584,7 @@
       {
         "id": 57959387857277,
         "title": "Blanc / M",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1601,7 +1601,7 @@
       {
         "id": 57959387890045,
         "title": "Blanc / L",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1618,7 +1618,7 @@
       {
         "id": 57959387922813,
         "title": "Blanc / XL",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
@@ -1635,7 +1635,7 @@
       {
         "id": 57959387955581,
         "title": "Blanc / 2 XL",
-        "available": false,
+        "available": true,
         "price": 35,
         "image": null,
         "options": [
