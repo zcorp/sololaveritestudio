@@ -1,6 +1,45 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "aO_K7PwU-VU",
+    "title": "Solola Verite Studio est en direct !",
+    "description": "",
+    "thumbnail": "https://i2.ytimg.com/vi/aO_K7PwU-VU/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-10-31T09:54:20+00:00"
+    },
+    "updated": "2026-10-31T09:56:07+00:00",
+    "url": "https://www.youtube.com/watch?v=aO_K7PwU-VU",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "itIuNK6m5OM",
+    "title": "PROGRAMME DES OBSÈQUES DE SALAZAKU BAMANA DAVID ",
+    "description": "",
+    "thumbnail": "https://i2.ytimg.com/vi/itIuNK6m5OM/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-10-31T09:39:36+00:00"
+    },
+    "updated": "2026-10-31T09:43:49+00:00",
+    "url": "https://www.youtube.com/watch?v=itIuNK6m5OM",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "ZG13M_A6Crg",
+    "title": "LOBESO TRÈS FÂCHÉ CONTRE BANA YA WENGE POURQUOI KO NÉGLIGER EBEMBE YA MAMAN NA WERRASON VRAIMENT ",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/ZG13M_A6Crg/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-10-31T07:44:20+00:00"
+    },
+    "updated": "2026-10-31T09:42:24+00:00",
+    "url": "https://www.youtube.com/watch?v=ZG13M_A6Crg",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "xPVhsXrUr8A",
     "title": "JB MPIANA CONCERT NAYE YA ACCOR ARENA EZA TRES COMBATTU/ BA PESI YE 45 VISA",
     "description": "",
