@@ -1,6 +1,32 @@
 [
   {
     "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "ZYjqee90M40",
+    "title": "BOURO MPELA MECONTENT DU COMPORTEMENT DE JB MPIANA/S'EXPLIQUER SUR AFFAIRE YA AUDIO BA BOSANI SEGUIN",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/ZYjqee90M40/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-11-19T15:11:54+00:00"
+    },
+    "updated": "2026-11-19T17:07:38+00:00",
+    "url": "https://www.youtube.com/watch?v=ZYjqee90M40",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
+    "videoId": "jBlk0X88b3g",
+    "title": "LOULOU BUSINESS AYE KO REPONDRE FATAKI MBALA ALATAKI MABE NA CONCERT YA JB MPIANA",
+    "description": "",
+    "thumbnail": "https://i3.ytimg.com/vi/jBlk0X88b3g/hqdefault.jpg",
+    "insertedAt": {
+      "$date": "2026-11-19T13:21:07+00:00"
+    },
+    "updated": "2026-11-19T14:29:23+00:00",
+    "url": "https://www.youtube.com/watch?v=jBlk0X88b3g",
+    "duration": null
+  },
+  {
+    "channelId": "UCMKA4ikuN34nvdgsfcru3iQ",
     "videoId": "BUnWSctmXSk",
     "title": "JB MPIANA/ RIO AYE KO REPONDRE BOURO MPELA SUR SEGUIN MIGNON/ PAPA CHERIE PUISSANCE",
     "description": "",
